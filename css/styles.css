@@ -118,10 +118,12 @@ img {
   align-items: center;
   margin-left: auto;
 }
-
+.header-mail-link:hover .contacts-icon,
+.header-mail-link:focus .contacts-icon,
 .header-mail-link:hover,
 .header-mail-link:focus {
   color: #2196f3;
+  fill: #757575;
 }
 
 .header-phone-link {
@@ -138,27 +140,34 @@ img {
 .header-phone-link:focus {
   color: #2196f3;
 }
-
+.contacts-header-list .header-contacts{
+  align-items: center;
+}
+.contacts-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  align-items: center;
+  fill:  #757575;
+}
+.header-phone-link .header-contacts + .header-contacts{
+  margin-left: 50px;
+}
 /* ============== END HEADER ============== */
 
 /* ============== HERO ================= */
 
 .hero {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
 }
 
 .hero .container {
-  width: 1200px;
-  /* height: 600px; */
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 .hero-title {
@@ -199,6 +208,20 @@ img {
   line-height: 1.88;
 
   color: #ffffff;
+}
+.wrap-hero {
+  background-image: linear-gradient(
+    to left,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/bg/bg.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
 }
 
 /* =============== END HERO ================ */

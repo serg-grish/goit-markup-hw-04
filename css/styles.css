@@ -24,6 +24,8 @@ img {
 
 .link {
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .list {
@@ -33,6 +35,15 @@ img {
 .address {
   font-style: normal;
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid red; */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
 /* =============== HEADER ===============  */
 
@@ -111,19 +122,20 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.contacts-header-list {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 .header-mail-link:hover .contacts-icon,
 .header-mail-link:focus .contacts-icon,
 .header-mail-link:hover,
 .header-mail-link:focus {
   color: #2196f3;
-  fill: #757575;
+  fill: #2196f3;
+}
+.contacts-header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .header-phone-link {
@@ -140,7 +152,12 @@ img {
 .header-phone-link:focus {
   color: #2196f3;
 }
-.contacts-header-list .header-contacts{
+.contacts-header-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.contacts-header-list .header-contacts {
   align-items: center;
 }
 .contacts-icon {
@@ -150,7 +167,7 @@ img {
   align-items: center;
   fill:  #757575;
 }
-.header-phone-link .header-contacts + .header-contacts{
+.contacts-header-list .header-contacts + .header-contacts{
   margin-left: 50px;
 }
 /* ============== END HEADER ============== */
@@ -277,7 +294,16 @@ margin-right: auto;
   margin-left: 30px;
   margin-top: 30px;
 }
-
+.thumb {
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
 /* ============= END FEATURES ============== */
 
 /* ========== WHAT WE ARE DOING ============ */
@@ -328,11 +354,12 @@ margin-right: auto;
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 }
 
-.team .container {
+.team .container,
+.partners .container {
+ 
   width: 1200px;
   /* height: 648px; */
   margin: 0 auto;
@@ -342,6 +369,8 @@ margin-right: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -355,6 +384,13 @@ margin-right: auto;
 
   color: #212121;
 }
+.team .items {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
 
 .team-list {
   display: flex;
@@ -364,10 +400,7 @@ margin-right: auto;
 }
 
 .team-item1 {
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
+
 
   background: #ffffff;
 
@@ -381,10 +414,6 @@ margin-right: auto;
 }
 
 .team-item2 {
-  width: 270px;
-  height: 368px;
-  left: 815px;
-  top: 1635px;
 
   background: #ffffff;
 
@@ -398,10 +427,6 @@ margin-right: auto;
 }
 
 .team-item3 {
-  width: 270px;
-  height: 368px;
-  left: 815px;
-  top: 1635px;
 
   background: #ffffff;
 
@@ -415,10 +440,7 @@ margin-right: auto;
 }
 
 .team-item4 {
-  width: 270px;
-  height: 368px;
-  left: 815px;
-  top: 1635px;
+ 
 
   background: #ffffff;
 
@@ -463,8 +485,61 @@ margin-right: auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+.team .icon-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-list {
+  margin-top: 22px;
+}
+.icons-thumb {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.team-icons {
+  fill: #757575;
+}
+.icon-items-link:focus .icons-thumb,
+.icon-items-link:hover .icons-thumb,
+.icon-items-link:focus .team-icons,
+.icon-items-link:hover .team-icons {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
 /* =============== END TEAM =============== */
+
+/*============= Постоянные клиенты =========== */
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-thumb {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-logo {
+  fill: #afb1b8;
+}
+.partners-link:hover .partner-logo {
+  fill: #2196f3;
+}
+.partners-link:hover .partners-thumb {
+  border: 1px solid #2196f3;
+}
+
 
 /* ============== PORTFOLIO =============== */
 
@@ -511,9 +586,6 @@ margin-right: auto;
 .filter-item-button:focus {
   background-color: #2196f3;
   color: #ffffff;
-}
-
-.filter-item-text {
 }
 
 /* ============ PORTFOLIO CARDS ============ */
@@ -593,16 +665,12 @@ margin-right: auto;
 
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer .container {
-  width: 1200px;
-  /* height: 250px; */
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+ display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -671,6 +739,35 @@ margin-right: auto;
 .footer-mail {
   margin-bottom: 9px;
 }
+.invitation {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 
+.footer .icon-list {
+  display: flex;
+}
+.items {
+  margin-bottom: 9px;
+}
+
+.footer-wraper:not(:last-child) {
+  margin-right: 70px;
+}
+
+.icon-list-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .icons-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icons {
+  fill: #ffffff;
 /* ============= END FOOTER =============== */
 

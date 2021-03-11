@@ -486,16 +486,12 @@ margin-right: auto;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team .icon-list-team  {
+.team .icon-list  {
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
-.icon-list {
-  display: flex;
-  justify-content: space-evenly;
-  
-}
+
 .team .list {
   display: flex;
   padding: 0px;

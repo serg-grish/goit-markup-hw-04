@@ -485,6 +485,7 @@ margin-right: auto;
 .team-item-content-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding: 30px 32px;
 }
 .team .icon-list  {
   display: flex;
@@ -519,7 +520,7 @@ margin-right: auto;
 
 /* =============== END TEAM =============== */
 
-/*============= Постоянные клиенты =========== */
+/*============= PARTNERS =========== */
 
 .partners-list {
   display: flex;
@@ -551,7 +552,7 @@ margin-right: auto;
 .partners-logo {
   fill: #afb1b8;
 }
-.partners-link:hover .partner-logo {
+.partners-link:hover .partners-logo {
   fill: #2196f3;
 }
 .partners-link:hover .partners-thumb {
